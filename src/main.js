@@ -1,8 +1,20 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-
-Vue.config.productionTip = false;
+// 打印当前环境
+import log from "@/assets/js/log";
+log.capsule("当前环境", process.env.VUE_APP_ENV, "success");
+log.capsule("当前版本", process.env.VUE_APP_VERSION, "success");
+// MuseUI
+import MuseUI from "muse-ui";
+import "muse-ui/dist/muse-ui.css";
+Vue.use(MuseUI);
+import Loading from "muse-ui-loading";
+import "muse-ui-loading/dist/muse-ui-loading.css";
+Vue.use(Loading);
+// 自定义loading
+import myLoading from "./components/Loading/index";
+Vue.use(myLoading);
 
 new Vue({
   router,

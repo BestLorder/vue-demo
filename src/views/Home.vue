@@ -1,18 +1,60 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <mu-container
+    data-mu-loading-color="secondary"
+    data-mu-loading-overlay-color="rgba(0, 0, 0, .7)"
+    v-loading="loading"
+    class="page"
+  >
+    <div class="home">
+      <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+      <Son msg="Welcome to Your Vue.js App" a="aaa" b="bbb" @into="into" />
+    </div>
+    <mu-alert color="error">
+      this is error alert
+    </mu-alert>
+  </mu-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import Son from "@/components/Son.vue";
+import { addMoreParams } from "@/mixins/mixins";
 export default {
   name: "home",
   components: {
-    HelloWorld
+    Son
+  },
+  mixins: [addMoreParams],
+  data() {
+    return {
+      loading: false
+    };
+  },
+  provide: {
+    data: "I am parent.vue"
+  },
+  created() {
+    this.$myLoading(true);
+    setTimeout(() => {
+      this.$myLoading(false);
+    }, 3000);
+    console.log(process.env.VUE_APP_ENV);
+    console.log(this.getOtherInfo());
+    // this.myLoading(true);
+    // this.$router.push({ name: "about", params: { name: "aa", age: 17 } });
+    // this.$router.push({ name: "about", query: { name: "aa", age: 17 } });
+  },
+  methods: {
+    into() {
+      console.log("in");
+    }
   }
 };
 </script>
+
+<style lang="less">
+.page {
+  // min-height: 100vh;
+  // background: #ededed;
+}
+</style>

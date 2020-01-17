@@ -3,12 +3,20 @@
  * @Author: Lorder
  * @Date: 2019-12-05 16:21:22
  * @LastEditors  : Lorder
+<<<<<<< HEAD
  * @LastEditTime : 2020-01-17 19:43:53
+=======
+ * @LastEditTime : 2020-01-17 18:30:45
+>>>>>>> parent of ea61fd5... 2
  -->
 <template>
   <div id="app">
     <!-- <div id="nav">
+<<<<<<< HEAD
       <router-link to="/">Home</router-link> |
+=======
+      <router-link to="/">Home1</router-link> |
+>>>>>>> parent of ea61fd5... 2
       <router-link to="/about">About</router-link>
     </div> -->
     <router-view />

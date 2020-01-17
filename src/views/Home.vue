@@ -1,10 +1,3 @@
-<!--
- * @Descripttion: 
- * @Author: Lorder
- * @Date: 2019-12-05 16:21:22
- * @LastEditors: Lorder
- * @LastEditTime: 2020-01-17 20:13:04
- -->
 <template>
   <mu-container
     data-mu-loading-color="secondary"
@@ -17,7 +10,7 @@
       <Son msg="Welcome to Your Vue.js App" a="aaa" b="bbb" @into="into" />
     </div>
     <mu-alert color="error">
-      this is error alert 666
+      this is error alert
     </mu-alert>
   </mu-container>
 </template>

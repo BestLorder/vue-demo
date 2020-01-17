@@ -6,7 +6,7 @@
     class="page"
   >
     <div class="home">
-      <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+      <img alt="Vue logo" src="@/assets/logo.png" />
       <Son msg="Welcome to Your Vue.js App" a="aaa" b="bbb" @into="into" />
     </div>
     <mu-alert color="error">
@@ -34,10 +34,10 @@ export default {
     data: "I am parent.vue"
   },
   created() {
-    this.$myLoading(true);
-    setTimeout(() => {
-      this.$myLoading(false);
-    }, 3000);
+    // this.$myLoading(true);
+    // setTimeout(() => {
+    //   this.$myLoading(false);
+    // }, 3000);
     console.log(process.env.VUE_APP_ENV);
     console.log(this.getOtherInfo());
     // this.myLoading(true);

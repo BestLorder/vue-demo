@@ -1,3 +1,10 @@
+/*
+ * @Descripttion:
+ * @Author: Lorder
+ * @Date: 2019-12-05 16:21:22
+ * @LastEditors  : Lorder
+ * @LastEditTime : 2020-01-08 19:53:35
+ */
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -9,6 +16,10 @@ log.capsule("当前版本", process.env.VUE_APP_VERSION, "success");
 import MuseUI from "muse-ui";
 import "muse-ui/dist/muse-ui.css";
 Vue.use(MuseUI);
+// ElementUI
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+Vue.use(ElementUI);
 import Loading from "muse-ui-loading";
 import "muse-ui-loading/dist/muse-ui-loading.css";
 Vue.use(Loading);

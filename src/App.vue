@@ -3,13 +3,13 @@
  * @Author: Lorder
  * @Date: 2019-12-05 16:21:22
  * @LastEditors  : Lorder
- * @LastEditTime : 2020-01-17 18:30:45
+ * @LastEditTime : 2020-01-17 18:32:37
  -->
 <template>
   <div id="app">
     <!-- <div id="nav">
       <router-link to="/">Home1</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About2</router-link>
     </div> -->
     <router-view />
   </div>

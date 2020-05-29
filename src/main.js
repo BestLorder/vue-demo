@@ -3,7 +3,7 @@
  * @Author: Lorder
  * @Date: 2019-12-05 16:21:22
  * @LastEditors  : Lorder
- * @LastEditTime : 2020-01-08 19:53:35
+ * @LastEditTime : 2020-01-19 14:46:34
  */
 import Vue from "vue";
 import App from "./App.vue";
@@ -26,6 +26,9 @@ Vue.use(Loading);
 // 自定义loading
 import myLoading from "./components/Loading/index";
 Vue.use(myLoading);
+
+import Helpers from "muse-ui/lib/Helpers";
+Vue.use(Helpers);
 
 new Vue({
   router,

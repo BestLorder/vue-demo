@@ -3,7 +3,7 @@
  * @Author: Lorder
  * @Date: 2019-12-05 16:21:22
  * @LastEditors: Lorder
- * @LastEditTime: 2020-05-29 16:17:56
+ * @LastEditTime: 2020-05-29 16:25:49
  -->
 <template>
   <div class="about">
@@ -22,7 +22,8 @@
 export default {
   data() {
     return {
-      a: 1
+      a: 1,
+      b: 2
     };
   },
   created() {

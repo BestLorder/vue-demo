@@ -2,8 +2,8 @@
  * @Descripttion: 
  * @Author: Lorder
  * @Date: 2019-12-05 16:21:22
- * @LastEditors: Lorder
- * @LastEditTime: 2020-05-29 16:17:56
+ * @LastEditors  : Lorder
+ * @LastEditTime : 2020-01-06 19:00:37
  -->
 <template>
   <div class="about">
@@ -21,9 +21,7 @@
 <script>
 export default {
   data() {
-    return {
-      a: 1
-    };
+    return {};
   },
   created() {
     // const loading = this.$loading();

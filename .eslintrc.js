@@ -10,5 +10,11 @@ module.exports = {
   },
   parserOptions: {
     parser: "babel-eslint"
+  },
+  globals: {
+    TcPlayer: "writable",
+    wx: "writable",
+    VHALL_SDK: "writable",
+    RongIMLib: "writable"
   }
 };

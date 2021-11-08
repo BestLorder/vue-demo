@@ -15,29 +15,71 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: Home
+    component: Home,
+    // name: "hls",
+    // component: () => import("../views/hls.vue")
   },
   {
     path: "/about",
     name: "about",
-    component: () => import("../views/About.vue")
+    component: () => import("../views/About.vue"),
   },
   {
     path: "/table",
     name: "table",
-    component: () => import("../views/Table.vue")
+    component: () => import("../views/Table.vue"),
   },
   {
     path: "/copyImg",
     name: "copyImg",
-    component: () => import("../views/CopyImg.vue")
-  }
+    component: () => import("../views/CopyImg.vue"),
+  },
+  {
+    path: "/play",
+    name: "play",
+    component: () => import("../views/play.vue"),
+  },
+  {
+    path: "/hls",
+    name: "hls",
+    component: () => import("../views/hls.vue"),
+  },
+  {
+    path: "/video",
+    name: "video",
+    component: () => import("../views/video.vue"),
+  },
+  {
+    path: "/hlsIos",
+    name: "hlsIos",
+    component: () => import("../views/hlsIos.vue"),
+  },
+  {
+    path: "/360",
+    name: "360",
+    component: () => import("../views/360.vue"),
+  },
+  {
+    path: "/product",
+    name: "Product",
+    component: () => import("../views/Product.vue"),
+  },
+  {
+    path: "/visual",
+    name: "visual",
+    component: () => import("../views/visual.vue"),
+  },
+  {
+    path: "/test",
+    name: "test",
+    component: () => import("../views/test.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;

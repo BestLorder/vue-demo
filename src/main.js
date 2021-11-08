@@ -12,6 +12,8 @@ import router from "./router";
 import log from "@/assets/js/log";
 log.capsule("当前环境", process.env.VUE_APP_ENV, "success");
 log.capsule("当前版本", process.env.VUE_APP_VERSION, "success");
+import axios from "axios";
+Vue.prototype.$axios = axios;
 // MuseUI
 import MuseUI from "muse-ui";
 import "muse-ui/dist/muse-ui.css";
@@ -29,8 +31,18 @@ Vue.use(myLoading);
 
 import Helpers from "muse-ui/lib/Helpers";
 Vue.use(Helpers);
+import VConsole from "vconsole";
+var vConsole = new VConsole();
+console.log(vConsole);
 
+import tim from "./tim";
+// import insuranceRecord from "record-ui";
+// Vue.use(insuranceRecord);
+
+Vue.prototype.tim = tim;
+import TIM from "tim-js-sdk";
+window.TIM = TIM;
 new Vue({
   router,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
